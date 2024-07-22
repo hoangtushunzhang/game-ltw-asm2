@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  
+}
+
+a:visited {
+  color: aliceblue;
+}
+
+.gameContent {
+  height: 4000px;
+  margin: 100px 250px 0px 250px;
+  /* background: red; */
+  color: aliceblue;
+}
+
+.gameContent h1 {
+  color: aliceblue;
+}
+
+.rating {
+  display: flex;
+  align-items:end;
+}
+
+.rating p {
+  margin-left: 10px;
+  color: aliceblue;
+  background: #2a2a2a;
+  width: 30px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.star {
+  color: aliceblue;
+  font-size: 20px;
+  /* border: red 1px solid; */
+}
+
+.overview img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.miniview {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 20px 0px;
+  align-items: center;
+}
+
+.miniview button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #2a2a2a;
+  color: rgb(180, 180, 180);
+}
+
+.miniview button:hover {
+  background-color: #494949;
+}
+
+.minipic img {
+  height: 80px;
+  margin: 0px 10px 0px 10px;
+}
+
+.genres_features {
+  margin: 40px 0px 40px 0px;
+  display: flex;
+  /* background-color: red; */
+}
+
+.genres_features div {
+  border-left: 1px solid #2a2a2a;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.note {
+  background-color: #2a2a2a;
+  padding: 20px ;
+}
+
+.showmore {
+  margin: 40px 0px 40px 0px;
+}
+
+.showmore h5 {
+  margin: 20px 0px 20px 0px;
+}
+
+.download {
+  margin: 100px 0px 100px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.download a {
+  color: black;
+  font-size: 40px;
+  background-color: #fb9a29;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 40px;
+  border: 3px solid black;
+}
+
+.download_info {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  justify-content: space-between;
+}
+
+.download_info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Spec {
+  margin: 40px 0px 40px 0px;
+  box-sizing: border-box;
+  background-color: #2a2a2a;
+  padding: 60px ;
+}
+
+.Spec h3 {
+  margin: 20px 0px 10px 0px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+
+}
+
+.col {
+  width: 50%;
+  margin: 20px;
+}
+
+.Spec p {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+

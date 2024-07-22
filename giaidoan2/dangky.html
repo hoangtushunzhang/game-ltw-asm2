@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Ký</title>
+  <link rel="stylesheet" href="./css/dk.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="\index.html">Home</a></li>
+    </ul>
+  </nav>
+  <form id="form-1" class="form" name="frm1" method="post" action="dk.php" onsubmit="return kiemtra();">
+    <h4>ĐĂNG KÝ THÀNH VIÊN</h4>
+    <div class="form-group">
+      <label for="mssv" class="form-label">Mã số sinh viên</label>
+      <input id="mssv" type="text" name="ms" class="form-control">
+      <span class="form-message"></span>
+    </div>
+    <div class="form-group">
+      <label for="fullname" class="form-label">Họ và tên</label>
+      <input id="fullname" type="text" name="fullname" placeholder="VD: Nguyen Van A" class="form-control">
+      <span class="form-message"></span>
+    </div>
+    <div class="form-group">
+      <label for="email" class="form-label">Email</label>
+      <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+      <span class="form-message"></span>
+    </div>
+    <label>Giới tính</label>
+    <div name="gioitinh" class="box">
+      <input type="radio" name="gioitinh" value="nam">Nam
+      <input type="radio" name="gioitinh" value="nu">Nữ
+    </div>
+    <label>Sở thích</label>
+    <div name="sothich" class="box">
+      <input type="checkbox" name="sothich[]" value="docsach">Đọc sách
+      <input type="checkbox" name="sothich[]" value="dulich">Du lịch
+      <input type="checkbox" name="sothich[]" value="amnhac">Âm nhạc
+      <input type="checkbox" name="sothich[]" value="amthuc">Ẩm thực
+      <input type="checkbox" name="sothich[]" value="khac">Khác
+    </div>
+    <label>Quốc tịch</label>
+    <select id="selectCountry" name="quoctich">
+      <option value="" disabled selected>Chọn quốc tịch</option>
+    </select>
+    <label>Ghi chú</label> <textarea name="ghichu"></textarea>
+    <button type="submit">Đăng ký</button>
+  </form>
+
+  <script src="./js/dk.js"></script>
+  <script src="./js/valid.js"></script>
+  <script>
+    Validator({
+      form: '#form-1',
+      formGroupSelector: '.form-group',
+      errorSelector: '.form-message',
+      rules: [
+        Validator.isRequired('#mssv', 'Vui lòng nhập MSSV'),
+        Validator.isRequired('#fullname', 'Vui lòng nhập họ tên đầy đủ'),
+        Validator.isRequired('#info'),
+        Validator.isEmail('#email', 'Vui lòng nhập email của bạn'),
+        Validator.minLength('#fullname', 3, 'Vui lòng nhập ít nhất 3 kí tự'),
+        Validator.maxLength('#fullname', 25, 'Vui lòng nhập tối đa 25 kí tự'),
+      ],
+      onSubmit: function (data) {
+        console.log(data)
+      }
+    })
+  </script>
+  <!-- <iframe src="dk.php" frameborder="0"></iframe> -->
+</body>
+
+</html>

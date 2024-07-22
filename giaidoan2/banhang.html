@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="./css/bh.css">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="\index.html">Home</a></li>
+    </ul>
+</nav>
+  <h1>Bán Hàng</h1>
+  <select id="mucGiaSelect">
+  </select>
+  <table>
+    <thead>
+      <tr>
+        <th><input type="checkbox" id="selectAllCheckbox"></th>
+        <th>Hàng hóa</th>
+        <th>Đơn giá</th>
+        <th>Số lượng</th>
+        <th>Thành tiền</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Tổng</td>
+        <td id="tongtien">0</td>
+      </tr>
+    </tfoot>
+  </table>
+  <script src="./js/bh.js"></script>
+</body>
+</html>

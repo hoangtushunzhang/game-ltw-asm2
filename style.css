@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.navbar {
+  position: fixed;
+  height: 50px;
+  width:100%;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  background: black;
+  
+  border-bottom: 1px #2a2a2a solid;
+  z-index: 9999;
+}
+
+.navbar li {
+  /* border: 2px solid red; */
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  line-height: 50px;
+  color: aliceblue;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.navbar li:hover {
+  border-bottom: 3px aliceblue solid;
+}
+
+.navbar_links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-right: auto;
+  /* background-color: red; */
+}
+
+.navbar_links a:visited{
+  color: aliceblue;
+}
+
+
+
+.signin {
+  margin: 0px 80px 0px 80px;
+}
+
+.signin i{
+  color: aliceblue;
+  margin: 0px 20px 0px 0px;
+}
+
+
+.logo {
+  height: 40px;
+  margin: 0px 80px 0px 80px;
+  /* background-color: red; */
+}
+
+
+.searchbar input{
+  border-radius: 20px;
+  height: 30px;
+  width: 200px;
+  background: #2a2a2a;
+  border: 0px #2a2a2a;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchbar i {
+  color: aliceblue;
+  margin-left: 10px;
+}
+
+.body {
+  display: flex;
+  margin: 100px 80px 0px 80px;
+  /* background: red; */
+  /* width: 1000px; */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color:black;
+  width: 90%;
+  height: 1800px;
+  margin: 0px 80px 0px 0px;
+}
+
+
+.gamemenu {
+  display: flex;
+  height: 500px;
+  /* background-color: blue; */
+}
+
+.bigscreen {
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.bigscreen img{
+  border-radius: 10px;
+}
+
+.smallscreen {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 500px;
+  justify-content: space-between;
+}
+
+
+.gamecard-row {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  padding-left: 10px;
+  /* border: 2px solid red; */
+}
+
+.gamecard-row:hover {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+
+.gamecard-row img{
+  height: 75px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.gamecard-row p {
+  padding-left: 20px;
+  color: aliceblue;
+}
+
+.gameonsales {
+  margin: 75px 0px 75px 0px;
+}
+
+.gameslider div:nth-child(1) {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content:space-between;
+}
+
+.gameslider div:nth-child(1) h5{
+  color: aliceblue;
+  font-size: 25px;
+}
+
+.gameslider button {
+  color: aliceblue;
+  font-size: 15px;
+  background-color: black;
+  border: aliceblue 1px solid;
+  border-radius: 25px;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+}
+
+.gameslider button:hover {
+  background-color: #2a2a2a;
+}
+
+.gameslider button:active {
+  border: aliceblue solid 1px;
+}
+
+.gameslider div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gamecard-col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+}
+
+.gamecard-col:hover {
+  background-color: #2a2a2a;
+  border-radius: 20px;
+}
+
+.gamecard-col p {
+  margin-top: 20px;
+  color: aliceblue;
+
+}
+
+.gamecard-col img {
+  height: 250px;
+  border-radius: 10px;
+}
+
+
+.topgamessection {
+  height: 550px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.topgamessection h5 {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+
+.topgamessection img {
+  width: 50px;
+  margin: 0px 30px 0px 10px;
+  border-radius: 10px;
+}
+
+.topgamessection p {
+  color: aliceblue;
+}
+
+.topgamessection hr {
+  border: 1px #2a2a2a solid;
+  border-left: none;
+}
+
+.topgamessection .gamelists_container {
+  /* border: red 2px solid; */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+
+
+.topgamessection .gamelists_heading {
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gamelists_heading button{
+  font-size: 10px;
+  color: aliceblue;
+  background-color: black;
+  border: 1px aliceblue solid;
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+}
+
+.gamelists_heading button:hover {
+  background-color: #2a2a2a;
+}
+
+
+
+.gamelists_container span {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  justify-content: space-between;
+  height: 90%;
+
+}
+
+.cate {
+  position: fixed;
+  color: aliceblue;
+  writing-mode:vertical-rl;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 0px;
+  width: 30px;
+  height: 150px;
+  background: black;
+  border: #2a2a2a solid 1px;
+  text-align: center;
+  /* border-left: 1px rgb(58, 58, 58) solid; */
+  cursor: pointer;
+}
+
+.sidemenu {
+  position: fixed;
+  display: none;
+  color: aliceblue;
+  /* display: flex; */
+  writing-mode: horizontal-tb;
+  flex-direction: column;
+  list-style: none;
+  width: 150px;
+  height: 800px;
+  background: black;
+  border: #2a2a2a solid 1px;
+  padding: 30px 0px 0px 30px;
+  text-align: left;
+}
+
+.cate:hover .sidemenu {
+  display: block;
+  /* background: rebeccapurple; */
+}
+
+.sidemenu a {
+  color: aliceblue;
+}
+
+.sidemenu li {
+  padding-top: 20px;
+}
+
+
+
+
+.footer {
+  border-top: #868686 solid 2px;
+  background-color: #000000;
+  height: 300px;
+  width: 100%;
+  z-index: 99;
+}
+
+.social {
+  margin: 60px 0px 0px 80px ;
+}
+
+.social h3 {
+  
+  color: aliceblue;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.social p {
+  color: aliceblue;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+.social i{
+  color: aliceblue;
+  padding-right: 10px;
+}
+
+#social {
+  margin: 10px 20px 0px 0px;
+  font-size: 30px;
+}
+
+.bx {
+  width: 500px;
+  height: 300px;
+  background-color: rebeccapurple;
+}
+
+.genresection {
+  /* background-color: red; */
+  max-width: 90%;
+  gap: 30px;
+}
+
+.genresection h1 {
+  color: aliceblue;
+}
+
+.genresection > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+
+.giaidoan2 {
+
+  color: aliceblue;
+}
